@@ -363,7 +363,7 @@ static void recursive_decoder(int encoded_idx, int decoded_idx, int good_decoded
           recursive_decoder(encoded_idx + j+1, decoded_idx + 1, good_decoded_size);
         }
         
-        break;
+        break; 
       }
       
     }
