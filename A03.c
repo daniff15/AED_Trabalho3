@@ -343,7 +343,7 @@ static void recursive_decoder(int encoded_idx, int decoded_idx, int good_decoded
 
   if (_encoded_message_[encoded_idx] == '\0')
   {
-    _number_of_solutions_ ++;
+    _number_of_solutions_++;
 
   }
 
