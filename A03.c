@@ -335,7 +335,7 @@ struct
 static void recursive_decoder(int encoded_idx, int decoded_idx, int good_decoded_size)
 {
   _number_of_calls_++;
-  // put your code here!
+  
   if ((decoded_idx - good_decoded_size) > _max_extra_symbols_)
   {
     _max_extra_symbols_ = (decoded_idx - good_decoded_size);
@@ -349,7 +349,7 @@ static void recursive_decoder(int encoded_idx, int decoded_idx, int good_decoded
 
   for (int i = 0; i < _c_->n_symbols; i++)
   {
-    for (int j = 0; _c_->data[i].codeword[j] != '\0' &&_c_->data[i].codeword[j] == _encoded_message_[encoded_idx + j]; j++)
+    for (int j = 0; _c_->data[i].codeword[j] == _encoded_message_[encoded_idx + j]; j++)
     {
       if (_c_->data[i].codeword[j+1] == '\0')
       {
