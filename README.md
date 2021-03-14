@@ -9,11 +9,16 @@ Este trabalho prático foi desenvolvido para a cadeira de Algoritmos e Estrutura
 ## Como correr
 * Compile the following way:
 ```console
-Compile and run this program and redirect its output to a file
-//      This can be done by running the following commands
-//      > make sorting_methods
-//      > ./sorting_methods -measure | tee output.txt
-//      The program will take some time to finish (somewhere between 1 hour and 4 hours)
+Compile the program:
+//      > make A03
+Usage of the program:
+//      > ./A03 -s n_symbols seed                       # show the code words of random code
+//      > ./A03 -t [n_symbols [message_size [seed]]]    # encode and decode message
+//      > ./A03 -x n_symbols                            # try the first 201 seeds
+Execute the program several times:
+//      > chmod u+x do_all.bash
+//      > ./do_all.bash
+
 ```
 
 ## Autores
